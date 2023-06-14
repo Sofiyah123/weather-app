@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>She Codes Plus</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="She Codes Plus Logo" class="logo" />
+    <h1>Forms</h1>
+  
+
+    <h3>Challenge 1</h3>
+    <p>When clicking this button, alert "Hooray!"</p>
+    <button id="special-button">Click me</button>
+    <h3>Challenge 2</h3>
+    <p>
+      When submitting the form, alert the value of the password input
+      <form id="password-form">
+        <input type="password" id="password-input" placeholder="Enter your password">
+        <input type="submit" value="Sign up" id="submit">
+      </form>
+    </p>
+    <h3>Challenge 3</h3>
+    <p>
+        When submitting the form, alert the value of the username and email inputs
+        <form id="signup-form">
+          <input type="email" id="email-input" placeholder="Enter your email" required>
+          <input type="username" id="username-input" placeholder="Enter your username" required>
+          <input type="submit" value="Sign up" id="signUp">
+        </form>
+    </p>
+      
+    <script>
+      let btn = document.querySelector("#special-button");
+function greet() {
+  alert("Hooray!");
+}
+btn.addEventListener("click", greet);
+
+let btnPass = document.querySelector("#submit");
+let passInput = document.querySelector("#password-input");
+function see() {
+  alert(passInput.value);
+}
+btnPass.addEventListener("click", see);
+
+let Email = document.querySelector("#email-input");
+let Username = document.querySelector("#username-input");
+let submitBtn = document.querySelector("#signUp");
+function display() {
+  let email = Email.value;
+  let username = Username.value;
+  alert(`${email}  and ${username}`);
+}
+submitBtn.addEventListener("click", display);
+
+    </script>
+  </body>
+</html>
+
+// let city = prompt("Enter a City");
+// city = city.toLowerCase();
+// if (city == "paris") {
+//   alert("It is currently 19 A C (66F)in Paris with a humidity of 80%");
+// } else {
+//   alert(
+//     "Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+Sydney"
+//   );
+// }
+// let weather = {
+//   paris: {
+//     temp: 19.7,
+//     humidity: 80,
+//   },
+//   tokyo: {
+//     temp: 17.3,
+//     humidity: 50,
+//   },
+//   lisbon: {
+//     temp: 30.2,
+//     humidity: 20,
+//   },
+//   "san francisco": {
+//     temp: 20.9,
+//     humidity: 100,
+//   },
+//   moscow: {
+//     temp: -5,
+//     humidity: 20,
+//   },
+// };
+
+// let city = prompt("Enter a city?");
+// city = city.toLowerCase();
+// if (weather[city] !== undefined) {
+//   let temperature = weather[city].temp;
+//   let humidity = weather[city].humidity;
+//   let celsiusTemperature = Math.round(temperature);
+//   let fahrenheitTemperature = Math.round((temperature * 9) / 5 + 32);
+
+//   alert(
+//     `It is currently ${celsiusTemperature}°C (${fahrenheitTemperature}°F) in ${city} with a humidity of ${humidity}%`
+//   );
+// } else {
+//   alert(
+//     `Sorry we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
+//   );
+// }
+// <!DOCTYPE html>
+// <html>
+//   <head>
+//     <title>SheCodes Plus Functions</title>
+//     <meta charset="UTF-8" />
+//     <link rel="stylesheet" href="src/styles.css" />
+//   </head>
+
+//   <body>
+//     <h1>SheCodes Plus / Selectors</h1>
+//     <div id="app"></div>
+
+//     <ul>
+//       <li class="country">France 🇫🇷</li>
+//       <li class="country">USA 🇺🇸</li>
+//       <li class="country" id="special">Portugal 🇵🇹</li>
+//     </ul>
+
+//     <script src="src/index.js"></script>
+//   </body>
+// </html>

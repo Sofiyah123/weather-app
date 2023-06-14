@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>API Testing</title>
+  </head>
+  <body>
+    <script>
+      axios.get(apiUrl).then(displayComment);
+
+      function displayComment(response) {
+        // response.data.forEach((comment) => {
+        //   console.log(`Email: ${comment[0]email}`);
+        // });
+        console.log(`The first Email: ${response.data[0].email}`);
+      }
+
+      let apiUrl = `https://jsonplaceholder.typicode.com/comments`;
+      axios.get(apiUrl).then(displayComment);
+    </script>
+  </body>
+</html>
