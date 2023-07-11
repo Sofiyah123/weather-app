@@ -105,4 +105,12 @@ li {
   background:transparent;
   color:rgb(117, 179, 238);
 }
+.git {
+      text-align: center;
+    cursor: pointer;
+    color: 61abc8;
+    display: block;
+    text-decoration:none;
+}
+
 °F
